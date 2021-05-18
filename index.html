@@ -1,55 +1,35 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thumbspanel</title>
-    <style media="screen">
-      div {
-        border: 1px solid black;
-        background-color: red;
-        margin: 5px;
-        padding: 5px;
-      }
-      #content{
-        border: 5px dotted yellow;
-        background-color: green;
-        margin: auto;
-        width: ;
-      }
-      .linksBox {
-        background-color: blue;
-      }
-      a {}
-      a:hover {
 
-      }
-      a:visited {
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thumbspanel</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-      }
-      body {
-        background-color: black;
-      }
-      @media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
-}
-    </style>
-  </head>
-  <body>
-    <div id="content">
+<body>
+  <div id="content">
     <div class="linksBox">
       <h1>Thumbspanel</h1>
       <p>this is to control the panel</p>
+      <p id="parabox"></p>
     </div>
     <div class="linksBox">
       <p><a href="http://172.21.3.4:5000/tutd?thumb=up">up</a></p>
       <p><a href="http://172.21.3.4:5000/tutd?thumb=wiggle">wiggle</a></p>
       <p><a href="http://172.21.3.4:5000/tutd?thumb=down">down</a></p>
     </div>
-      <div class="linksBox">
-              <p><a href="game.html">rick role</a></p>
+    /<div class="textBox">
+      <img src="img/ball.jpg" alt="A ball.">
+      <p>this is a beach ball. beach balls can be used at the beach and pool.</p>
+      <img src="img/carrot.webp" alt="carrot.">
+      <p>this is a carrot. carrots are used for making things and eating.</p>
+      <img src="img/stick.jfif" alt="stick.">
+      <p>this is a stick. you can find sticks hiking or in your yard.</p>
+    </div>
+    <div class="linksBox">
+      <p><a href="game.html">rick role</a></p>
       <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Game</a></p>
       <p><a href="http://172.21.3.4:5000/bgm?file=shrek">play shrek music</a></p>
       <p><a href="http://172.21.3.4:5000/say?phrase='ben cute">hi</a></p>
@@ -63,7 +43,14 @@
 
 
   </div>
+  <script type="text/javascript">
+  var box = ['sword', 'pickaxe', 'shovel', 'cure for cancer']
+  var rando = Math.random() * 4
+  rando = Math.floor(rando)
+  document.getElementById('parabox').innerHTML = box[rando]
+</script>
 
 
-  </body>
+</body>
+
 </html>

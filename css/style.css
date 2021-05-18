@@ -1,0 +1,48 @@
+div {
+  border: 1px solid black;
+  background-color: white;
+  margin: 5px;
+  padding: 5px;
+}
+
+#content {
+  border: 2px solid blue;
+  background-color: green;
+  margin: auto;
+  width: ;
+}
+
+.linksBox {
+  background-color: blue;
+}
+
+a {}
+
+a:hover {}
+
+a:visited {}
+
+.linksBox,
+.textBox {
+  border-radius: 2px;
+}
+
+.textBox {
+  overflow: auto;
+}
+
+.textbox img {
+  width: 25%;
+  float: left;
+  clear: left;
+}
+
+body {
+  background-color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
